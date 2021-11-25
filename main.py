@@ -3,9 +3,16 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from Models.City import City
-
+from Models.NPC import NPC
 
 def makeCity(name):
+    npc = NPC("Jacob", "", "Landry", "barbarian")
+    print(npc.getName)
+    print(npc.getOccupation().name)
+    print(npc.getWealth())
+    print(npc.getIncome())
+    print("=================")
+
     city = City(name, 'small')
 
     print(city.getName())

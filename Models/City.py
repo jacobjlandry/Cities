@@ -1,7 +1,7 @@
 import random
+from traits.api import HasTraits
 
-
-class City:
+class City( HasTraits ):
     name = ""
     populationRanges = {
         "homestead": [1, 49],
